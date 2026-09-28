@@ -222,7 +222,7 @@ cp -a ${WORKDIR}/rockdev/boot.img ${WORKDIR}/rockdev_img_tmp/RKDevTool-v3.37-G98
 cp -a ${WORKDIR}/rockdev/rootfs.img ${WORKDIR}/rockdev_img_tmp/RKDevTool-v3.37-G98-RK3588/Image/
 
 cd ${WORKDIR}/rockdev_img_tmp/
-tar -zcvf  ${WORKDIR}/release/${BUILD_TAG}.tar.gz RKDevTool-v3.37-G98-RK3588
+rar a ${WORKDIR}/release/${BUILD_TAG} RKDevTool-v3.37-G98-RK3588
 cd ${WORKDIR}/release/
 sha256sum ${BUILD_TAG}
 
